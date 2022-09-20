@@ -1,0 +1,38 @@
+# phpstorm project files
+.idea
+.vagrant
+_ide_helper.php
+.php_cs.cache
+.env
+phinx.yml
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+#node package
+/node_modules
+
+#images
+/public/img
+
+#import elements upload dir
+/public/import/upload
+
+/dump.sql

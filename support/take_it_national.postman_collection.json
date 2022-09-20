@@ -1,0 +1,2382 @@
+{
+	"info": {
+		"_postman_id": "4b358aea-7da0-43fb-b4d6-cb33708df93e",
+		"name": "Take It National",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "Update a user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNTU2NjAsImV4cCI6MTU1MjE2Mjg2MCwianRpIjoiNnF2NlNndnhEb2IwdWlTYlZKOW9ISSIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOjl9.u7c5u8yJkzR_a_cSDYrZScqEOIeNqge3RqafHJZaixM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tonydspaniard\",\n\t\"email\": \"antonio@2amigos.us\",\n\t\"password\": \"2hard4you\",\n\t\"password_repeat\": \"2hard4you\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNDM3MjUsImV4cCI6MTU1MjE1MDkyNSwianRpIjoidEx1anoxN096eWNmcXpWbzFpbGh3Iiwic3ViIjoiZGVtb0BkZW1vLmNvbSIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6OX0.Hs5ptRQfTTb4nZxWK4A_H6E4qY642xdgHYS60zmEB_0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tonydspaniard\",\n\t\"email\": \"antonio@2amigos.us\",\n\t\"password\": \"2hard4you\",\n\t\"password_repeat\": \"2hard4you\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user websites lists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNTEyNzIsImV4cCI6MTU1MjE1ODQ3MiwianRpIjoiNktGaGRZZ2E4NlAzbmh0SWk4ZkdiIiwic3ViIjoiZGVtb0BkZW1vLmNvbSIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6OX0.22q2Ex3jdMGuXhaM2-hv7ElyqDnSN8TJe-3QQNP6mD8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/users/9/websites",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"9",
+								"websites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNDM3MjUsImV4cCI6MTU1MjE1MDkyNSwianRpIjoidEx1anoxN096eWNmcXpWbzFpbGh3Iiwic3ViIjoiZGVtb0BkZW1vLmNvbSIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6OX0.Hs5ptRQfTTb4nZxWK4A_H6E4qY642xdgHYS60zmEB_0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/users/9?include=websites",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"9"
+							],
+							"query": [
+								{
+									"key": "include",
+									"value": "websites"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user lists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNDM3MjUsImV4cCI6MTU1MjE1MDkyNSwianRpIjoidEx1anoxN096eWNmcXpWbzFpbGh3Iiwic3ViIjoiZGVtb0BkZW1vLmNvbSIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6OX0.Hs5ptRQfTTb4nZxWK4A_H6E4qY642xdgHYS60zmEB_0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/users/?include=websites",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								""
+							],
+							"query": [
+								{
+									"key": "include",
+									"value": "websites"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI2NDQ4MzQsImV4cCI6MTU1MjY1MjAzNCwianRpIjoiMUV5RWlBM1htUkdlMnFDTktmMUhNMCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFkbWluIn0.0UpJghouUo_rHoKzoAdZf1nl3eSjzm12Je4Y6Ff7zXw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"tonydspaniard\",\n\t\"email\": \"antonio@2amigos.us\",\n\t\"password\": \"2hard4you\",\n\t\"password_repeat\": \"2hard4you\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI2NDMyMTYsImV4cCI6MTU1MjY1MDQxNiwianRpIjoiNjBWM2UwN2Vjb3JCTVZ0MjlCV2pFTyIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFkbWluIn0.iCe7nPyczUPLoVviVmxoAReBdmPai_BKb1vMEEccBoo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"first_name\": \"First Name\",\n\t\"last_name\": \"Last Name\",\n\t\"billing_address\": \"Billing address\",\n\t\"phone\": \"Phone\",\n\t\"website\": \"www.website.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/4/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"4",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI2NDMyMTYsImV4cCI6MTU1MjY1MDQxNiwianRpIjoiNjBWM2UwN2Vjb3JCTVZ0MjlCV2pFTyIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFkbWluIn0.iCe7nPyczUPLoVviVmxoAReBdmPai_BKb1vMEEccBoo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"first_name\": \"First Name\",\n\t\"last_name\": \"Last Name\",\n\t\"billing_address\": \"Billing address\",\n\t\"phone\": \"Phone\",\n\t\"website\": \"www.website.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/users/4/profile",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"4",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upload profile avatar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTU1ODAzMDgsImV4cCI6MTU1NTU4NzUwOCwianRpIjoiN0JaOXdQdks4SGt5WUNFUVhTd1ZldiIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJjbGllbnRzLmFsbCIsIndlYnNpdGVzLmFsbCIsImZ1bm5lbHMuYWxsIiwidHlwZXMuYWxsIiwidHlwZXMuYXR0cmlidXRlcy5hbGwiLCJlbGVtZW50cy5hbGwiLCJlbGVtZW50cy5hdHRyaWJ1dGVzLmFsbCIsInByb2ZpbGUuYWxsIl0sInVzZXJfaWQiOiI5Iiwicm9sZSI6ImFnZW5jeSIsImF2YXRhciI6ImltZ1wvbG9nb1wvNGI0N2IyNWQ5MThiZGVkNTI0YjQ3YTU3NzVkYjQxODEucG5nIn0.76V6Y8mpJvWq-cBtx65-Cnpc1gENCB_F0EWP_wUZ0Sg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": ""
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/users/9/profile/avatar",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"9",
+								"profile",
+								"avatar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "websites",
+			"item": [
+				{
+					"name": "Get website lists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNTEyNzIsImV4cCI6MTU1MjE1ODQ3MiwianRpIjoiNktGaGRZZ2E4NlAzbmh0SWk4ZkdiIiwic3ViIjoiZGVtb0BkZW1vLmNvbSIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6OX0.22q2Ex3jdMGuXhaM2-hv7ElyqDnSN8TJe-3QQNP6mD8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/websites",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"websites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update website",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNjAwMjAsImV4cCI6MTU1MjE2NzIyMCwianRpIjoiNkVSTjIyZzNrR0pzZWM0RGsyZUN4eCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOjl9.ppDFtuV_6y1Bc8JkH20aA824fB1TkwFq4D1yOGdONyE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"demo-site-2\",\n    \"url\": \"https://www.demo-site-2.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/websites/9",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"websites",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create website",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI4OTg3NDEsImV4cCI6MTU1MjkwNTk0MSwianRpIjoicDRPcDBXVmRvNUw0WXRhNk9nbGlYIiwic3ViIjoiZGVtb0BkZW1vLmNvbSIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6IjQiLCJyb2xlIjoiYWRtaW4ifQ.5hpeOuEaChzaaXj39TtL7kWy6bcRfRz5yCIGesg5Rjs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"demo-site-2\",\n    \"url\": \"https://www.demo-site-2.com\",\n    \"client_id\": 1,\n    \"api_key\": \"2hard4you\",\n    \"api_secret\": \"2hard4you\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/websites",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"websites"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a website",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTIxNzU5NzAsImV4cCI6MTU1MjE4MzE3MCwianRpIjoiMjQ1VzE5eGp1Q0VHYlFtQWVQenF3WSIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOjl9.aDfz1fZBjnbiGwt2zNzzemw8vEZNS-KIIcpiXziy0G4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/websites/11",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"websites",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get website funnels",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0OTM0MjAsImV4cCI6MTU1MjUwMDYyMCwianRpIjoiNm04ZTQ1Zlh1Sm84bWRWQzh4TzNZQyIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJjbGllbnRzLmFsbCIsIndlYnNpdGVzLmFsbCIsImZ1bm5lbHMuYWxsIiwidHlwZXMuYWxsIiwidHlwZXMuYXR0cmlidXRlcy5hbGwiLCJlbGVtZW50cy5hbGwiLCJlbGVtZW50cy5hdHRyaWJ1dGVzLmFsbCJdLCJ1c2VyX2lkIjoiNCIsInJvbGUiOiJhZ2VuY3kifQ.zTNwJYnCMAE-lBht_Wrqk1vSljHq-fxUtDD2JdtcmoA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user_id\": 5,\n\t\"name\": \"Client name\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/websites/2/funnels",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"websites",
+								"2",
+								"funnels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a website",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0OTQzNjYsImV4cCI6MTU1MjUwMTU2NiwianRpIjoiM3pYRDdrTjJzU0NuR3ZNbEVVNkxveSIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJjbGllbnRzLmFsbCIsIndlYnNpdGVzLmFsbCIsImZ1bm5lbHMuYWxsIiwidHlwZXMuYWxsIiwidHlwZXMuYXR0cmlidXRlcy5hbGwiLCJlbGVtZW50cy5hbGwiLCJlbGVtZW50cy5hdHRyaWJ1dGVzLmFsbCJdLCJ1c2VyX2lkIjoiNCIsInJvbGUiOiJhZ2VuY3kifQ.AEN5Fba-Cqdg0s_b34F43dW93MdSpDXUHxI3PrSo92E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/websites/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"websites",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "funnels",
+			"item": [
+				{
+					"name": "Get funnel list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"new updated Title\",\n\t\"name\": \"new updated Name\",\n\t\"description\": \"this is updated test description\",\n\t\"url_pattern\": \"test.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels?filter=limit(5|1)",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "limit(5|1)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single funnel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"new updated Title\",\n\t\"name\": \"new updated Name\",\n\t\"description\": \"this is updated test description\",\n\t\"url_pattern\": \"test.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels/16",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update funnel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"demo new\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels/16",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete funnel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"demo new\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels/16",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create funnel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"new funnel name\",\n\t\"website_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get funnel types list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI2NTM4OTgsImV4cCI6MTU1MjY2MTA5OCwianRpIjoiQUpxSURoTVJyY2Qxbm5FZjdYYlhxIiwic3ViIjoiZGVtb0BkZW1vLmNvbSIsInNjb3BlIjpbImNsaWVudHMuYWxsIiwid2Vic2l0ZXMuYWxsIiwiZnVubmVscy5hbGwiLCJ0eXBlcy5hbGwiLCJ0eXBlcy5hdHRyaWJ1dGVzLmFsbCIsImVsZW1lbnRzLmFsbCIsImVsZW1lbnRzLmF0dHJpYnV0ZXMuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFnZW5jeSJ9.VjVj5G9QgpCnX32rjKFnyq8ZhOLXg-LYmlD5nu4TxZY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"New updated name\",\n\t\"description\": \"This is description\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels/7/types",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels",
+								"7",
+								"types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get funnel elements list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTMwNzQwNTQsImV4cCI6MTU1MzA4MTI1NCwianRpIjoiN1l2bFpNNER2MUxzREFWdk04NTNDayIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFkbWluIn0.gD11h3nPljVXdut6lNOtIdci5DjPjYSTOPsf0eDHAnQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"New updated name\",\n\t\"description\": \"This is description\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels/7/elements",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels",
+								"7",
+								"elements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get funnel configuration",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTk4MjkyMjMsImV4cCI6MTU1OTgzNjQyMywianRpIjoiQmY1UWxpV3d2TUZkbW9oQVFMeWhGIiwic3ViIjoiZGVtb0BkZW1vLmNvbSIsInNjb3BlIjpbImNsaWVudHMuYWxsIiwid2Vic2l0ZXMuYWxsIiwiZnVubmVscy5hbGwiLCJ0eXBlcy5hbGwiLCJ0eXBlcy5hdHRyaWJ1dGVzLmFsbCIsImVsZW1lbnRzLmFsbCIsImVsZW1lbnRzLmF0dHJpYnV0ZXMuYWxsIiwicHJvZmlsZS5hbGwiXSwidXNlcl9pZCI6IjciLCJyb2xlIjoiYWdlbmN5In0.sqZAmJ0dsZgtzfWw5_FlQWxoADS4qCCyEKmxW0HivGY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"website\": \"The Chill Room\",\n\t\"funnel\": \"thechillroom\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels/configuration",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels",
+								"configuration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh funnel configuration",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NjA0MTU1MjYsImV4cCI6MTU2MDQyMjcyNiwianRpIjoiNkdJQ21DcmMxb0tpT1IyTnpBTzRDdiIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJjbGllbnRzLmFsbCIsIndlYnNpdGVzLmFsbCIsImZ1bm5lbHMuYWxsIiwidHlwZXMuYWxsIiwidHlwZXMuYXR0cmlidXRlcy5hbGwiLCJlbGVtZW50cy5hbGwiLCJlbGVtZW50cy5hdHRyaWJ1dGVzLmFsbCIsInByb2ZpbGUuYWxsIl0sInVzZXJfaWQiOiI3Iiwicm9sZSI6ImFnZW5jeSJ9.S1N1ReTBE4aKk6dmJNV4cPB8PUJWQKSpjS_OYiv1VKQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/funnels/configuration/refresh",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"funnels",
+								"configuration",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "types",
+			"item": [
+				{
+					"name": "Get types list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTMyNDY2NjYsImV4cCI6MTU1MzI1Mzg2NiwianRpIjoiMzFSaXpJbDkyaWF4QWQwU2k1QU93cCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFkbWluIn0.KazOxgO5LXEzul-Y2BwA3S2Nlg7LQiH7LC1ukX5_8n4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"new Title\",\n\t\"name\": \"new Name\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/types",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single type",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjYxNjYsImV4cCI6MTU1MjQ3MzM2NiwianRpIjoiN0FqZHlMZUMyZGZCMkoxaW9UeU56RCIsInN1YiI6ImFudG9uaW9AMmFtaWdvcy51cyIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6IjIifQ.YNc-ivl7QhXfohq-SBjbsIxGU4CzHnna1axSVODg__k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"new Title\",\n\t\"name\": \"new Name\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/types/17",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"types",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTM1MTA5ODEsImV4cCI6MTU1MzUxODE4MSwianRpIjoiN012SFlxZ2ZDV2NHeDNzSGZxVGpSRCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFkbWluIn0.eb0n3SxUbZFVkiQBAdv6UEqA_72QqpRIvRAy9kP2Lzs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"funnel_id\": 7,\n\t\"parent_type_id\": null,\n\t\"title\": \"ROOT type\",\n\t\"name\": \"ROOT type\",\n\t\"description\": \"this is ROOT type\",\n\t\"url_pattern\": \"root/\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/types",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjYxNjYsImV4cCI6MTU1MjQ3MzM2NiwianRpIjoiN0FqZHlMZUMyZGZCMkoxaW9UeU56RCIsInN1YiI6ImFudG9uaW9AMmFtaWdvcy51cyIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6IjIifQ.YNc-ivl7QhXfohq-SBjbsIxGU4CzHnna1axSVODg__k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"new updated Title\",\n\t\"name\": \"new updated Name\",\n\t\"description\": \"this is updated test description\",\n\t\"url_pattern\": \"test.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/types/31",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"types",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjYxNjYsImV4cCI6MTU1MjQ3MzM2NiwianRpIjoiN0FqZHlMZUMyZGZCMkoxaW9UeU56RCIsInN1YiI6ImFudG9uaW9AMmFtaWdvcy51cyIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6IjIifQ.YNc-ivl7QhXfohq-SBjbsIxGU4CzHnna1axSVODg__k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"new updated Title\",\n\t\"name\": \"new updated Name\",\n\t\"description\": \"this is updated test description\",\n\t\"url_pattern\": \"test.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/types/31",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"types",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get type attributes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"new updated Title\",\n\t\"name\": \"new updated Name\",\n\t\"description\": \"this is updated test description\",\n\t\"url_pattern\": \"test.com\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/types/17/type-attributes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"types",
+								"17",
+								"type-attributes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "type attributes",
+			"item": [
+				{
+					"name": "Get type attributes list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"new funnel name\",\n\t\"website_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/type-attributes?filter=limit(5,1)",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"type-attributes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "limit(5,1)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single type attribute",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"new funnel name\",\n\t\"website_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/type-attributes/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"type-attributes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create type attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"funnel_element_type_id\": 1,\n\t\"name\": \"New name\",\n\t\"description\": \"This is description\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/type-attributes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"type-attributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update type attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"New updated name\",\n\t\"description\": \"This is description\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/type-attributes/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"type-attributes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete type attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"New updated name\",\n\t\"description\": \"This is description\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/type-attributes/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"type-attributes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "elements",
+			"item": [
+				{
+					"name": "Get element list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"demo new\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/elements?filter=limit(5|1)",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"elements"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "limit(5|1)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single element",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"demo new\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/elements/7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"elements",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update element",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"demo new\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/elements/7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"elements",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete element",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"demo new\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/elements/7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"elements",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create element",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"funnel_id\": 20,\n\t\"name\": \"New Element\",\n\t\"funnel_element_type_id\": 17\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/elements",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"elements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get element attributes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"funnel_id\": 20,\n\t\"name\": \"New Element\",\n\t\"funnel_element_type_id\": 17\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/elements/912/element-attributes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"elements",
+								"912",
+								"element-attributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create child element",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTMxNzY4NTMsImV4cCI6MTU1MzE4NDA1MywianRpIjoiNFN4WTZZUnhSNjl0MG13VDdhNTBEbCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFkbWluIn0.Kn5BOHWZZX9kZG6JS7PXQ66szBo9l9qJUwL8I4Hp6Qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Child Element\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/elements/2/children",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"elements",
+								"2",
+								"children"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get element children list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTMxODQxODAsImV4cCI6MTU1MzE5MTM4MCwianRpIjoiMmxIbXBCNmViVFZ5UXNIb2RyUWJQaSIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0Iiwicm9sZSI6ImFkbWluIn0.SIfBwVl61-7IoYAHycsOdxNs5uVDOfnDtj_yQ2ENcqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Child Element\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/elements/2/children",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"elements",
+								"2",
+								"children"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "element attributes",
+			"item": [
+				{
+					"name": "Get element attributes list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"funnel_id\": 20,\n\t\"name\": \"New Element\",\n\t\"funnel_element_type_id\": 17\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/element-attributes?filter=limit(5|1)",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"element-attributes"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "limit(5|1)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single element attribute",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"funnel_id\": 20,\n\t\"name\": \"New Element\",\n\t\"funnel_element_type_id\": 17\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/element-attributes/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"element-attributes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update element attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"value\": \"test value\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/element-attributes/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"element-attributes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create element attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"value\": \"test value\",\n\t\"funnel_element_id\": 1,\n\t\"funnel_element_type_attribute_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/element-attributes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"element-attributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete element attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"value\": \"test value\",\n\t\"funnel_element_id\": 1,\n\t\"funnel_element_type_attribute_id\": 1\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/element-attributes/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"element-attributes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "clients",
+			"item": [
+				{
+					"name": "Get clients list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTMwOTI1NzEsImV4cCI6MTU1MzA5OTc3MSwianRpIjoiMjVBbk9iWTg1NDcwQ1hUbzhKQU42SCIsInN1YiI6ImFudG9uaW9AMmFtaWdvcy51cyIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6IjIiLCJyb2xlIjoiYWRtaW4ifQ.zAlhZayHWgEeOWL-BDzmERcorwEhjXR6FT8fxUdvXT8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"New updated name\",\n\t\"description\": \"This is description\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/clients?filter=limit(5|1):order(name|desc)",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"clients"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "limit(5|1):order(name|desc)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single client",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NjcyNjYsImV4cCI6MTU1MjQ3NDQ2NiwianRpIjoiNExyT2lmT0JLRERETHhiT21HTUFhdCIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.rLjVyWshURoeMlhu-kOVq0cQS4-tjHjUaFDRHL3Div8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"New updated name\",\n\t\"description\": \"This is description\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/clients/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NzQ2MDEsImV4cCI6MTU1MjQ4MTgwMSwianRpIjoiMVJ5N2daNWZTT3BscWtRZU1EajFKcyIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.Wnzt6Wxqc1eXzeFLK9th6jEtPjMGj9T7sqGDWcuyCLw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"New updated client name\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/clients/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NzQ2MDEsImV4cCI6MTU1MjQ4MTgwMSwianRpIjoiMVJ5N2daNWZTT3BscWtRZU1EajFKcyIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.Wnzt6Wxqc1eXzeFLK9th6jEtPjMGj9T7sqGDWcuyCLw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"New updated client name\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/clients/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0NzQ2MDEsImV4cCI6MTU1MjQ4MTgwMSwianRpIjoiMVJ5N2daNWZTT3BscWtRZU1EajFKcyIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJhcHAuYWxsIl0sInVzZXJfaWQiOiI0In0.Wnzt6Wxqc1eXzeFLK9th6jEtPjMGj9T7sqGDWcuyCLw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user_id\": 4,\n\t\"name\": \"Client name\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/clients",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get client websites",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTI0OTM0MjAsImV4cCI6MTU1MjUwMDYyMCwianRpIjoiNm04ZTQ1Zlh1Sm84bWRWQzh4TzNZQyIsInN1YiI6ImRlbW9AZGVtby5jb20iLCJzY29wZSI6WyJjbGllbnRzLmFsbCIsIndlYnNpdGVzLmFsbCIsImZ1bm5lbHMuYWxsIiwidHlwZXMuYWxsIiwidHlwZXMuYXR0cmlidXRlcy5hbGwiLCJlbGVtZW50cy5hbGwiLCJlbGVtZW50cy5hdHRyaWJ1dGVzLmFsbCJdLCJ1c2VyX2lkIjoiNCIsInJvbGUiOiJhZ2VuY3kifQ.zTNwJYnCMAE-lBht_Wrqk1vSljHq-fxUtDD2JdtcmoA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user_id\": 5,\n\t\"name\": \"Client name\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/clients/2/websites",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"clients",
+								"2",
+								"websites"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request a token for a user",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "demo@demo.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[app.all]"
+				},
+				"url": {
+					"raw": "{{base_url}}/token",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"token"
+					],
+					"query": [
+						{
+							"key": "demo@demo.com",
+							"value": "demo",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request a token for a website",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "demo-site",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "demo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/wstoken",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"wstoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get funnel configuration",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTQyOTE1MTIsImV4cCI6MTU1NDI5ODcxMiwianRpIjoiM1g5aXNHbnF1RnVMdEgwQm95c212SSIsInN1YiI6ImFudG9uaW9AMmFtaWdvcy51cyIsInNjb3BlIjpbImFwcC5hbGwiXSwidXNlcl9pZCI6IjIiLCJyb2xlIjoiYWRtaW4ifQ.0hLfxXICb2BK11YlR2yrlKLicvlM68yu1kV9yTW_8JU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"website\": \"2amigos consulting group\",\n\t\"funnel\": \"framework\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/funnels/configuration",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"funnels",
+						"configuration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

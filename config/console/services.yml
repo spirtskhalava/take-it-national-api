@@ -1,0 +1,31 @@
+# config/services.yaml
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        public: false       # Allows optimizing the container by removing unused services; this also means
+        # fetching services directly from the container via $container->get() won't work.
+        # The best practice is to be explicit about your dependencies anyway.
+
+    Doctrine\DBAL\Driver\PDOMySql\Driver: ~
+    Doctrine\DBAL\Configuration: ~
+    Doctrine\Common\EventManager: ~
+    # must be connected via 2amigos VPN
+    Doctrine\DBAL\Connection:
+        public: true
+        arguments:
+            $params:
+                user: '%env(DB_USER)%'
+                password: '%env(DB_PASSWORD)%'
+                host: '%env(DB_HOST)%'
+                port: '%env(DB_PORT)%'
+                dbname: '%env(DB_NAME)%'
+            $driver: '@Doctrine\DBAL\Driver\PDOMySql\Driver'
+            $config: '@Doctrine\DBAL\Configuration'
+            $eventManager: '@Doctrine\Common\EventManager'
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../../src/*'
+        exclude: '../../src/{Entity,Migrations,Tests,Kernel.php}'
